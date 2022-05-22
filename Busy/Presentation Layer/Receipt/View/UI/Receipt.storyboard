@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Receipt View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ReceiptViewController" id="Y6W-OH-hqX" customClass="ReceiptViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOH-eH-U80">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1W-KT-5sd">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="11Z-XD-RMU"/>
+                                            <constraint firstAttribute="height" constant="44" id="YSX-ah-uMr"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PZK-2E-QYg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Չեկ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp0-SS-BfT">
+                                        <rect key="frame" x="191.5" y="16" width="31" height="18"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Rp0-SS-BfT" firstAttribute="centerY" secondItem="EOH-eH-U80" secondAttribute="centerY" id="46Y-UL-sBf"/>
+                                    <constraint firstAttribute="height" constant="50" id="4WW-SN-fp6"/>
+                                    <constraint firstItem="w1W-KT-5sd" firstAttribute="centerY" secondItem="EOH-eH-U80" secondAttribute="centerY" id="Bxz-7K-NRY"/>
+                                    <constraint firstItem="w1W-KT-5sd" firstAttribute="leading" secondItem="EOH-eH-U80" secondAttribute="leading" constant="5" id="pv5-VQ-Xzs"/>
+                                    <constraint firstItem="Rp0-SS-BfT" firstAttribute="centerX" secondItem="EOH-eH-U80" secondAttribute="centerX" id="tl3-Q2-cW1"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M8q-2u-85n">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" name="CustomGray"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M8q-2u-85n" secondAttribute="trailing" id="5Ig-R7-BAe"/>
+                            <constraint firstItem="EOH-eH-U80" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="OBj-JT-ouz"/>
+                            <constraint firstItem="EOH-eH-U80" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Xfs-ae-d74"/>
+                            <constraint firstAttribute="bottom" secondItem="M8q-2u-85n" secondAttribute="bottom" id="aYK-ms-Chc"/>
+                            <constraint firstItem="M8q-2u-85n" firstAttribute="top" secondItem="EOH-eH-U80" secondAttribute="bottom" id="f8l-cX-dOb"/>
+                            <constraint firstItem="M8q-2u-85n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pkD-Hn-XM1"/>
+                            <constraint firstAttribute="trailing" secondItem="EOH-eH-U80" secondAttribute="trailing" id="vKA-Q4-rVM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="receiptTableView" destination="M8q-2u-85n" id="mOB-V0-qCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left 1" width="26" height="26"/>
+        <namedColor name="CustomGray">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

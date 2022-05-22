@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Contacts View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ContactsViewController" id="Y6W-OH-hqX" customClass="ContactsViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUI-kv-eXW">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Boa-5a-tMD" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="799"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="E0U-D3-pnG">
+                                                <rect key="frame" x="169" y="146" width="76" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="aE0-uB-3CK"/>
+                                                    <constraint firstAttribute="width" constant="76" id="gVd-ox-V3d"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWP-RU-GdD">
+                                                <rect key="frame" x="24" y="202" width="366" height="44"/>
+                                                <string key="text">Ethereum ecosystem-based cloud hosting. Protocol writing, inflated B2B SaaS series B. Generalist-reading secondary markets buyer. Signal boosting esports legend.</string>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="12"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Հեռախոսահամար՝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38u-y2-rfN">
+                                                <rect key="frame" x="140" y="278" width="134" height="16"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laq-gf-75q">
+                                                <rect key="frame" x="159.5" y="294" width="95" height="25"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="12"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="+374 95 55 12 17">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="phoneNumberPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iPS-Mb-vRs"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Հարցեր, բողոքներ, առաջարկներ՝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWp-Rv-y9J">
+                                                <rect key="frame" x="87.5" y="343" width="239" height="16"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2p-Sw-yf3">
+                                                <rect key="frame" x="162.5" y="359" width="89" height="25"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="12"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="help@busy.am">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="helpButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GZ5-3H-RHh"/>
+                                                    <action selector="phoneNumberPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="J3w-Q7-EWx"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Էլ. հասցե՝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-im-5zZ">
+                                                <rect key="frame" x="173" y="408" width="68" height="16"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHV-C6-7yv">
+                                                <rect key="frame" x="164" y="424" width="86" height="25"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="12"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="info@busy.am">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mailButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uzx-PK-T3b"/>
+                                                    <action selector="phoneNumberPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PqE-Yr-4id"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="IWP-RU-GdD" firstAttribute="leading" secondItem="Boa-5a-tMD" secondAttribute="leading" constant="24" id="0HM-Nd-bwv"/>
+                                            <constraint firstItem="N2p-Sw-yf3" firstAttribute="top" secondItem="iWp-Rv-y9J" secondAttribute="bottom" id="1NX-sf-KpU"/>
+                                            <constraint firstItem="iWp-Rv-y9J" firstAttribute="centerX" secondItem="laq-gf-75q" secondAttribute="centerX" id="1PK-zG-CMD"/>
+                                            <constraint firstAttribute="bottom" secondItem="fHV-C6-7yv" secondAttribute="bottom" constant="350" id="4bh-yL-4D8"/>
+                                            <constraint firstItem="iWp-Rv-y9J" firstAttribute="top" secondItem="laq-gf-75q" secondAttribute="bottom" constant="24" id="5Dp-sv-uc1"/>
+                                            <constraint firstAttribute="trailing" secondItem="IWP-RU-GdD" secondAttribute="trailing" constant="24" id="7Fg-gc-RGH"/>
+                                            <constraint firstItem="fHV-C6-7yv" firstAttribute="centerX" secondItem="EIU-im-5zZ" secondAttribute="centerX" id="BlK-kj-HTC"/>
+                                            <constraint firstItem="EIU-im-5zZ" firstAttribute="centerX" secondItem="N2p-Sw-yf3" secondAttribute="centerX" id="GSb-HQ-R65"/>
+                                            <constraint firstItem="IWP-RU-GdD" firstAttribute="top" secondItem="E0U-D3-pnG" secondAttribute="bottom" constant="24" id="HA1-l8-fJR"/>
+                                            <constraint firstItem="laq-gf-75q" firstAttribute="top" secondItem="38u-y2-rfN" secondAttribute="bottom" id="Hja-Xv-9Cc"/>
+                                            <constraint firstItem="N2p-Sw-yf3" firstAttribute="centerX" secondItem="iWp-Rv-y9J" secondAttribute="centerX" id="Mvj-iw-5cb"/>
+                                            <constraint firstItem="fHV-C6-7yv" firstAttribute="top" secondItem="EIU-im-5zZ" secondAttribute="bottom" id="OzR-Rv-Zsi"/>
+                                            <constraint firstItem="E0U-D3-pnG" firstAttribute="top" secondItem="Boa-5a-tMD" secondAttribute="top" constant="146" id="WfG-LQ-PB6"/>
+                                            <constraint firstItem="laq-gf-75q" firstAttribute="centerX" secondItem="38u-y2-rfN" secondAttribute="centerX" id="d89-ug-E4m"/>
+                                            <constraint firstItem="E0U-D3-pnG" firstAttribute="centerX" secondItem="Boa-5a-tMD" secondAttribute="centerX" id="is1-f3-t69"/>
+                                            <constraint firstItem="38u-y2-rfN" firstAttribute="centerX" secondItem="IWP-RU-GdD" secondAttribute="centerX" id="ixP-g2-Prf"/>
+                                            <constraint firstItem="EIU-im-5zZ" firstAttribute="top" secondItem="N2p-Sw-yf3" secondAttribute="bottom" constant="24" id="jdv-Cx-3Yj"/>
+                                            <constraint firstItem="38u-y2-rfN" firstAttribute="top" secondItem="IWP-RU-GdD" secondAttribute="bottom" constant="32" id="ofU-Eg-qUa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Boa-5a-tMD" secondAttribute="bottom" id="0ke-R0-NEP"/>
+                                    <constraint firstItem="Boa-5a-tMD" firstAttribute="width" secondItem="NUI-kv-eXW" secondAttribute="width" id="Iou-Wr-tCb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Boa-5a-tMD" secondAttribute="trailing" id="MiD-YM-UuM"/>
+                                    <constraint firstItem="Boa-5a-tMD" firstAttribute="top" secondItem="NUI-kv-eXW" secondAttribute="top" id="TEg-xE-v8Q"/>
+                                    <constraint firstItem="Boa-5a-tMD" firstAttribute="leading" secondItem="NUI-kv-eXW" secondAttribute="leading" id="exj-e3-ZJl"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-sD-h5n">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-nm-Ael">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="aNs-Va-iWP"/>
+                                            <constraint firstAttribute="width" constant="44" id="vAv-pg-z7D"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HXA-4J-UGS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Կապ մեզ հետ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj6-5b-Hsw">
+                                        <rect key="frame" x="150.5" y="16" width="113.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uj6-5b-Hsw" firstAttribute="centerY" secondItem="Eh1-sD-h5n" secondAttribute="centerY" id="0UQ-Oq-3Pp"/>
+                                    <constraint firstItem="lFr-nm-Ael" firstAttribute="centerY" secondItem="Eh1-sD-h5n" secondAttribute="centerY" id="D3y-pH-iwT"/>
+                                    <constraint firstAttribute="height" constant="50" id="Iy6-ve-hOT"/>
+                                    <constraint firstItem="uj6-5b-Hsw" firstAttribute="centerX" secondItem="Eh1-sD-h5n" secondAttribute="centerX" id="Va2-DS-gAF"/>
+                                    <constraint firstItem="lFr-nm-Ael" firstAttribute="leading" secondItem="Eh1-sD-h5n" secondAttribute="leading" constant="5" id="uEb-m4-Gsb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Eh1-sD-h5n" secondAttribute="trailing" id="0lY-Px-ahx"/>
+                            <constraint firstItem="NUI-kv-eXW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="C1X-hW-Tis"/>
+                            <constraint firstItem="Eh1-sD-h5n" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Jwc-K8-BI6"/>
+                            <constraint firstAttribute="bottom" secondItem="NUI-kv-eXW" secondAttribute="bottom" id="SX9-QU-SE0"/>
+                            <constraint firstItem="NUI-kv-eXW" firstAttribute="top" secondItem="Eh1-sD-h5n" secondAttribute="bottom" id="Wz1-GS-7Kd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NUI-kv-eXW" secondAttribute="trailing" id="ZNv-02-VwS"/>
+                            <constraint firstItem="Eh1-sD-h5n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mZF-vh-jr4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="76" height="32"/>
+        <image name="left 1" width="26" height="26"/>
+        <namedColor name="CustomDarkGray">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

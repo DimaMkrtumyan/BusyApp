@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavHeaderView" id="U6b-Vx-4bR" customClass="FavHeaderView" customModule="Busy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tashir Pizza" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="U1U-BK-sqB">
+                    <rect key="frame" x="24" y="24" width="143" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="4B4-ye-zKx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Cj-sy-gbh">
+                    <rect key="frame" x="235" y="24.5" width="60" height="28.5"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Բացել էջը">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="12" name="NotoSansArmenian-Regular"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2I-J8-jhv">
+                    <rect key="frame" x="24" y="52" width="176" height="24"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Խորենացի փողոց, 33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-SH-aJO">
+                            <rect key="frame" x="0.0" y="4" width="149" height="16"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                            <color key="textColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="D4z-O5-r7k" appends="YES" id="3s6-MO-waS"/>
+                            </connections>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down1" translatesAutoresizingMaskIntoConstraints="NO" id="flg-Zi-edY">
+                            <rect key="frame" x="153" y="0.0" width="23" height="24"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="flg-Zi-edY" secondAttribute="trailing" id="7Zb-C9-Fpw"/>
+                        <constraint firstItem="xIU-SH-aJO" firstAttribute="centerY" secondItem="T2I-J8-jhv" secondAttribute="centerY" id="8Pc-OJ-IsG"/>
+                        <constraint firstItem="xIU-SH-aJO" firstAttribute="leading" secondItem="T2I-J8-jhv" secondAttribute="leading" id="9xe-ey-7TG"/>
+                        <constraint firstItem="flg-Zi-edY" firstAttribute="leading" secondItem="xIU-SH-aJO" secondAttribute="trailing" constant="4" id="QdS-i4-2Vd"/>
+                        <constraint firstAttribute="width" constant="176" id="W7r-aW-BlU"/>
+                        <constraint firstAttribute="bottom" secondItem="flg-Zi-edY" secondAttribute="bottom" id="bKG-Xo-8Yx"/>
+                        <constraint firstItem="flg-Zi-edY" firstAttribute="top" secondItem="T2I-J8-jhv" secondAttribute="top" id="g6i-7L-bkf"/>
+                        <constraint firstAttribute="height" constant="24" id="kIH-EX-CKY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="U1U-BK-sqB" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="24" id="0Lq-oi-9o7"/>
+                <constraint firstItem="T2I-J8-jhv" firstAttribute="leading" secondItem="U1U-BK-sqB" secondAttribute="leading" id="3Iu-Ip-5wy"/>
+                <constraint firstItem="0Cj-sy-gbh" firstAttribute="centerY" secondItem="U1U-BK-sqB" secondAttribute="centerY" id="BuH-b6-5z6"/>
+                <constraint firstItem="U1U-BK-sqB" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="24" id="Wcn-2w-fpl"/>
+                <constraint firstItem="T2I-J8-jhv" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="8" id="XCm-gT-jnC"/>
+                <constraint firstItem="0Cj-sy-gbh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U1U-BK-sqB" secondAttribute="trailing" constant="15" id="bDG-LI-iu1"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="0Cj-sy-gbh" secondAttribute="trailing" constant="25" id="r63-VG-GN3"/>
+            </constraints>
+            <connections>
+                <outlet property="addressLabel" destination="xIU-SH-aJO" id="UWG-Xm-6hd"/>
+                <outlet property="restuarantNameLabel" destination="U1U-BK-sqB" id="yJR-UY-zZh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="79.352678571428569"/>
+        </collectionReusableView>
+        <tapGestureRecognizer id="D4z-O5-r7k">
+            <connections>
+                <action selector="adressTapped:" destination="U6b-Vx-4bR" id="ol0-w6-d8F"/>
+                <outlet property="delegate" destination="T2I-J8-jhv" id="KSm-aI-dg6"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="down1" width="23" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

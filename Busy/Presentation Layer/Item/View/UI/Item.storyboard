@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Bold.otf">
+            <string>Montserratarm-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Item View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ItemViewController" id="Y6W-OH-hqX" customClass="ItemViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="UdS-ea-sEh">
+                                <rect key="frame" x="109" y="68" width="196" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="f3w-oH-g3t"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nte-aM-Sf0">
+                                <rect key="frame" x="0.0" y="94" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="OfO-8N-oUi">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d86-wJ-kA3">
+                                <rect key="frame" x="335" y="797" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="9NF-dh-wRZ"/>
+                                    <constraint firstAttribute="height" constant="55" id="ZoJ-pa-ug9"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="heart3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjj-Bg-xUp">
+                                <rect key="frame" x="24" y="797" width="299" height="55"/>
+                                <color key="backgroundColor" name="CustomRed"/>
+                                <fontDescription key="fontDescription" name="Montserratarm-Bold" family="Montserrat arm" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ավելացնել զամբյուղում">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="F3W-SP-fgF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d86-wJ-kA3" firstAttribute="leading" secondItem="tjj-Bg-xUp" secondAttribute="trailing" constant="12" id="1yk-gH-H9o"/>
+                            <constraint firstItem="UdS-ea-sEh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="109" id="80X-Lc-g8c"/>
+                            <constraint firstItem="nte-aM-Sf0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ez9-ep-cyX"/>
+                            <constraint firstItem="UdS-ea-sEh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="Hqn-tX-8sJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="d86-wJ-kA3" secondAttribute="bottom" constant="10" id="Oay-gg-seu"/>
+                            <constraint firstItem="tjj-Bg-xUp" firstAttribute="centerY" secondItem="d86-wJ-kA3" secondAttribute="centerY" id="cuO-uJ-3vn"/>
+                            <constraint firstItem="tjj-Bg-xUp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="dYA-e7-Rxp"/>
+                            <constraint firstItem="d86-wJ-kA3" firstAttribute="top" secondItem="nte-aM-Sf0" secondAttribute="bottom" id="dmL-Bf-hGn"/>
+                            <constraint firstItem="nte-aM-Sf0" firstAttribute="top" secondItem="UdS-ea-sEh" secondAttribute="bottom" constant="24" id="fc3-J5-b0G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nte-aM-Sf0" secondAttribute="trailing" id="iNH-Xd-gDa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UdS-ea-sEh" secondAttribute="trailing" constant="109" id="kjs-lP-G3Q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d86-wJ-kA3" secondAttribute="trailing" constant="24" id="nNQ-0v-dUY"/>
+                            <constraint firstItem="tjj-Bg-xUp" firstAttribute="height" secondItem="d86-wJ-kA3" secondAttribute="height" id="vHS-CW-mTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="itemCollectionView" destination="nte-aM-Sf0" id="Uhd-MT-CJ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Line" width="158" height="3"/>
+        <image name="heart3" width="55" height="57"/>
+        <namedColor name="CustomRed">
+            <color red="1" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

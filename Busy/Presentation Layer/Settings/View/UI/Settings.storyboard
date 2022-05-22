@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Bold.otf">
+            <string>Montserratarm-Bold</string>
+        </array>
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqi-zp-e7V">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEo-5w-GGF">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="HSw-iZ-AxP"/>
+                                            <constraint firstAttribute="height" constant="44" id="Jvq-b1-oVW"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sd0-dr-JA4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Կարգավորումներ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej4-p7-ROq">
+                                        <rect key="frame" x="134" y="16" width="146" height="18"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AcC-ny-NSp"/>
+                                    <constraint firstItem="vEo-5w-GGF" firstAttribute="leading" secondItem="fqi-zp-e7V" secondAttribute="leading" constant="5" id="Wjv-nS-z9c"/>
+                                    <constraint firstItem="ej4-p7-ROq" firstAttribute="centerX" secondItem="fqi-zp-e7V" secondAttribute="centerX" id="cX5-6E-3cH"/>
+                                    <constraint firstItem="vEo-5w-GGF" firstAttribute="centerY" secondItem="fqi-zp-e7V" secondAttribute="centerY" id="hhQ-sY-cu6"/>
+                                    <constraint firstItem="ej4-p7-ROq" firstAttribute="centerY" secondItem="fqi-zp-e7V" secondAttribute="centerY" id="mfQ-bh-6hP"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzr-Pq-9I5">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGf-Ki-8GA" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="718.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Անձնական նկար" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdj-Dz-ypE">
+                                                <rect key="frame" x="24" y="27" width="150.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempImage" translatesAutoresizingMaskIntoConstraints="NO" id="lB8-2D-prE">
+                                                <rect key="frame" x="24" y="63" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Ydr-7S-rC9"/>
+                                                    <constraint firstAttribute="width" constant="60" id="zTx-F1-Ppd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZb-r5-Hkg">
+                                                <rect key="frame" x="100" y="78" width="120" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="gGL-tM-feE"/>
+                                                    <constraint firstAttribute="width" constant="120" id="wvP-KC-Gb2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Վերբեռնել" image="camera">
+                                                    <color key="titleColor" name="CustomRed"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="choosePhotoPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qtu-js-Xqd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9c-c5-5EI">
+                                                <rect key="frame" x="24" y="131" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="3Ox-Sk-d1b"/>
+                                                    <constraint firstAttribute="width" constant="60" id="W09-Eq-zFM"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Անձնական կարգավորումներ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7H-Td-4ZP">
+                                                <rect key="frame" x="24" y="155" width="258.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Անուն" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAX-C4-fEe">
+                                                <rect key="frame" x="24" y="208" width="44" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="14"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-1A-cYe">
+                                                <rect key="frame" x="24" y="237.5" width="366" height="58"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="FOo-V3-l9G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Հեռախոսահամար" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-8F-R8n">
+                                                <rect key="frame" x="24" y="311.5" width="142" height="17"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="14"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mR1-VP-abT">
+                                                <rect key="frame" x="24" y="344.5" width="366" height="58"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="L7Y-dJ-tzr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ծննդյան ամսաթիվ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEd-R7-4T3">
+                                                <rect key="frame" x="24" y="418.5" width="148.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="14"/>
+                                                <color key="textColor" name="CustomDarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJs-aD-Feq">
+                                                <rect key="frame" x="24" y="448" width="366" height="58"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="b4b-7O-23h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-CE-07O">
+                                                <rect key="frame" x="24" y="549" width="366" height="55"/>
+                                                <color key="backgroundColor" name="CustomRed"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="g5b-2I-QfX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Bold" family="Montserrat arm" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Պահպանել">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="savePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Uaw-At-LPV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="c9c-c5-5EI" firstAttribute="top" secondItem="lB8-2D-prE" secondAttribute="bottom" constant="8" symbolic="YES" id="0wt-ZK-aBk"/>
+                                            <constraint firstItem="k7H-Td-4ZP" firstAttribute="top" secondItem="lB8-2D-prE" secondAttribute="bottom" constant="32" id="5L9-LF-Eic"/>
+                                            <constraint firstItem="Tsa-CE-07O" firstAttribute="leading" secondItem="mJs-aD-Feq" secondAttribute="leading" id="A0P-KK-9rR"/>
+                                            <constraint firstItem="lAX-C4-fEe" firstAttribute="leading" secondItem="k7H-Td-4ZP" secondAttribute="leading" id="BW6-02-AET"/>
+                                            <constraint firstItem="lB8-2D-prE" firstAttribute="leading" secondItem="WGf-Ki-8GA" secondAttribute="leading" constant="24" id="Clh-qD-VDk"/>
+                                            <constraint firstItem="mJs-aD-Feq" firstAttribute="trailing" secondItem="mR1-VP-abT" secondAttribute="trailing" id="CpH-GJ-1zg"/>
+                                            <constraint firstItem="xdj-Dz-ypE" firstAttribute="top" secondItem="WGf-Ki-8GA" secondAttribute="top" constant="27" id="D7S-IK-X8c"/>
+                                            <constraint firstItem="lAX-C4-fEe" firstAttribute="top" secondItem="c9c-c5-5EI" secondAttribute="bottom" constant="17" id="DfD-Mi-oP0"/>
+                                            <constraint firstItem="iEd-R7-4T3" firstAttribute="leading" secondItem="mR1-VP-abT" secondAttribute="leading" id="ECg-Fx-BXY"/>
+                                            <constraint firstItem="PtS-1A-cYe" firstAttribute="top" secondItem="lAX-C4-fEe" secondAttribute="bottom" constant="12" id="HGT-yh-GrE"/>
+                                            <constraint firstItem="c9c-c5-5EI" firstAttribute="leading" secondItem="WGf-Ki-8GA" secondAttribute="leading" constant="24" id="JbQ-3D-DSB"/>
+                                            <constraint firstItem="mR1-VP-abT" firstAttribute="top" secondItem="fuZ-8F-R8n" secondAttribute="bottom" constant="16" id="KES-XP-dKU"/>
+                                            <constraint firstItem="k7H-Td-4ZP" firstAttribute="leading" secondItem="WGf-Ki-8GA" secondAttribute="leading" constant="24" id="P8w-GO-xh1"/>
+                                            <constraint firstItem="PtS-1A-cYe" firstAttribute="leading" secondItem="WGf-Ki-8GA" secondAttribute="leading" constant="24" id="QIK-VJ-z9o"/>
+                                            <constraint firstItem="mJs-aD-Feq" firstAttribute="top" secondItem="iEd-R7-4T3" secondAttribute="bottom" constant="12" id="RwK-fq-zFl"/>
+                                            <constraint firstItem="mR1-VP-abT" firstAttribute="trailing" secondItem="PtS-1A-cYe" secondAttribute="trailing" id="TkC-41-y7A"/>
+                                            <constraint firstItem="fZb-r5-Hkg" firstAttribute="centerY" secondItem="lB8-2D-prE" secondAttribute="centerY" id="VKH-jm-OJQ"/>
+                                            <constraint firstItem="Tsa-CE-07O" firstAttribute="top" secondItem="mJs-aD-Feq" secondAttribute="bottom" constant="43" id="WPR-pw-uAf"/>
+                                            <constraint firstItem="iEd-R7-4T3" firstAttribute="top" secondItem="mR1-VP-abT" secondAttribute="bottom" constant="16" id="Ygq-AR-zc4"/>
+                                            <constraint firstItem="lB8-2D-prE" firstAttribute="top" secondItem="xdj-Dz-ypE" secondAttribute="bottom" constant="16" id="a2z-hz-Wz1"/>
+                                            <constraint firstAttribute="trailing" secondItem="PtS-1A-cYe" secondAttribute="trailing" constant="24" id="bQ5-sD-8Ee"/>
+                                            <constraint firstItem="mJs-aD-Feq" firstAttribute="leading" secondItem="mR1-VP-abT" secondAttribute="leading" id="bwG-z2-DR5"/>
+                                            <constraint firstItem="mR1-VP-abT" firstAttribute="leading" secondItem="PtS-1A-cYe" secondAttribute="leading" id="cNG-23-DLi"/>
+                                            <constraint firstItem="fuZ-8F-R8n" firstAttribute="top" secondItem="PtS-1A-cYe" secondAttribute="bottom" constant="16" id="d2l-jU-dGI"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tsa-CE-07O" secondAttribute="bottom" constant="114.33" id="gMg-vP-0ef"/>
+                                            <constraint firstItem="xdj-Dz-ypE" firstAttribute="leading" secondItem="WGf-Ki-8GA" secondAttribute="leading" constant="24" id="n1V-bi-VVk"/>
+                                            <constraint firstItem="Tsa-CE-07O" firstAttribute="trailing" secondItem="mJs-aD-Feq" secondAttribute="trailing" id="tZ3-lw-y73"/>
+                                            <constraint firstItem="fZb-r5-Hkg" firstAttribute="leading" secondItem="lB8-2D-prE" secondAttribute="trailing" constant="16" id="vAM-dF-KgQ"/>
+                                            <constraint firstItem="fuZ-8F-R8n" firstAttribute="leading" secondItem="WGf-Ki-8GA" secondAttribute="leading" constant="24" id="zLI-JD-qed"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WGf-Ki-8GA" secondAttribute="trailing" id="NUk-hz-ijB"/>
+                                    <constraint firstItem="WGf-Ki-8GA" firstAttribute="width" secondItem="Pzr-Pq-9I5" secondAttribute="width" id="TUe-Nt-MLp"/>
+                                    <constraint firstItem="WGf-Ki-8GA" firstAttribute="top" secondItem="Pzr-Pq-9I5" secondAttribute="top" id="ZsZ-ct-91z"/>
+                                    <constraint firstItem="WGf-Ki-8GA" firstAttribute="leading" secondItem="Pzr-Pq-9I5" secondAttribute="leading" id="cMX-sU-0VE"/>
+                                    <constraint firstAttribute="bottom" secondItem="WGf-Ki-8GA" secondAttribute="bottom" id="rfS-uE-l9j"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fqi-zp-e7V" secondAttribute="trailing" id="RIB-zb-ZKB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pzr-Pq-9I5" secondAttribute="trailing" id="YaB-nZ-VcS"/>
+                            <constraint firstItem="fqi-zp-e7V" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="m8w-gW-482"/>
+                            <constraint firstItem="Pzr-Pq-9I5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pE3-Rg-LrH"/>
+                            <constraint firstItem="Pzr-Pq-9I5" firstAttribute="top" secondItem="fqi-zp-e7V" secondAttribute="bottom" id="wsU-rG-mqp"/>
+                            <constraint firstItem="fqi-zp-e7V" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ywu-dQ-IyV"/>
+                            <constraint firstAttribute="bottom" secondItem="Pzr-Pq-9I5" secondAttribute="bottom" id="zkB-Jq-R9k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dobTextField" destination="mJs-aD-Feq" id="hRw-Qz-Dk6"/>
+                        <outlet property="nameTextField" destination="PtS-1A-cYe" id="l3F-Pe-aPJ"/>
+                        <outlet property="personImageView" destination="lB8-2D-prE" id="v17-qK-c99"/>
+                        <outlet property="phoneTextField" destination="mR1-VP-abT" id="FXB-WM-x2C"/>
+                        <outlet property="scrollView" destination="Pzr-Pq-9I5" id="7Zz-gP-stR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="16" height="16"/>
+        <image name="left 1" width="26" height="26"/>
+        <image name="tempImage" width="60" height="60"/>
+        <namedColor name="CustomDarkGray">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGray">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomRed">
+            <color red="1" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

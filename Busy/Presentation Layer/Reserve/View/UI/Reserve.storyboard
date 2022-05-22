@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Bold.otf">
+            <string>Montserratarm-Bold</string>
+        </array>
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Reserve View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ReserveViewController" id="Y6W-OH-hqX" customClass="ReserveViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvs-5E-yag">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-PC-NgO" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="787"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="red-lu-KvD">
+                                                <rect key="frame" x="101.66666666666669" y="105.66666666666666" width="151" height="49"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ZnV-Iu-4iT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="49" id="3Ck-Xf-i4w"/>
+                                                            <constraint firstAttribute="width" constant="49" id="Bee-y5-VvM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jazzve Yerevan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGS-dA-hAs">
+                                                        <rect key="frame" x="52.999999999999986" y="0.0" width="98.000000000000014" height="16"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Աբովյանի փողոց, 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-kC-ktq">
+                                                        <rect key="frame" x="52.999999999999986" y="20" width="136.66666666666663" height="16"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <color key="textColor" name="CustomDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="tEJ-kC-ktq" firstAttribute="leading" secondItem="ZnV-Iu-4iT" secondAttribute="trailing" constant="4" id="6Oh-su-aIc"/>
+                                                    <constraint firstItem="ZnV-Iu-4iT" firstAttribute="leading" secondItem="red-lu-KvD" secondAttribute="leading" id="Us6-c7-GTR"/>
+                                                    <constraint firstItem="ZnV-Iu-4iT" firstAttribute="centerY" secondItem="red-lu-KvD" secondAttribute="centerY" id="V8d-vu-Cog"/>
+                                                    <constraint firstItem="FGS-dA-hAs" firstAttribute="top" secondItem="ZnV-Iu-4iT" secondAttribute="top" id="dhm-fS-Rgy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FGS-dA-hAs" secondAttribute="trailing" id="iPq-aN-0nH"/>
+                                                    <constraint firstItem="FGS-dA-hAs" firstAttribute="leading" secondItem="tEJ-kC-ktq" secondAttribute="leading" id="ivN-ua-ldV"/>
+                                                    <constraint firstAttribute="height" constant="49" id="jBw-OY-qxP"/>
+                                                    <constraint firstItem="tEJ-kC-ktq" firstAttribute="top" secondItem="FGS-dA-hAs" secondAttribute="bottom" constant="4" id="qHN-H7-zek"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Մարդկանց քանակը" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMY-ci-jvZ">
+                                                <rect key="frame" x="117.66666666666669" y="181.66666666666666" width="179" height="19.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Մոտւքագրեք մարդկանց քանակը" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-6T-5Et">
+                                                <rect key="frame" x="24" y="217.33333333333331" width="366" height="48"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="uBK-jk-ecf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KQp-nY-vMo">
+                                                <rect key="frame" x="24" y="276.33333333333331" width="366" height="38"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXz-sX-dA8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="38"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wJm-nS-Kbk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzN-Oa-OPd">
+                                                        <rect key="frame" x="63.666666666666671" y="0.0" width="47.666666666666671" height="38"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LI0-Ot-D3e"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjY-FL-6cj">
+                                                        <rect key="frame" x="127.33333333333336" y="0.0" width="47.666666666666671" height="38"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bdi-fd-ZvQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFU-XY-Sxu">
+                                                        <rect key="frame" x="191" y="0.0" width="47.666666666666657" height="38"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="10">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8M5-4i-9It"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTM-1I-foH">
+                                                        <rect key="frame" x="254.66666666666666" y="0.0" width="47.666666666666657" height="38"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="15">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Gs-0j-MGZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8I4-Tu-bWh">
+                                                        <rect key="frame" x="318.33333333333331" y="0.0" width="47.666666666666686" height="38"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="20">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DCn-xi-wU2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="18j-ce-wnz"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ամրագրել սեղան" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNN-ql-gtW">
+                                                <rect key="frame" x="130.66666666666669" y="50" width="152.66666666666669" height="19.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="u0D-Ty-2Fs">
+                                                <rect key="frame" x="129" y="24" width="156" height="2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="6WH-jo-Yff"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ամրագրման ամսաթիվ և ժամ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-SS-7wL">
+                                                <rect key="frame" x="76.333333333333343" y="446" width="261.66666666666663" height="19.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbh-pL-zzW">
+                                                <rect key="frame" x="24" y="615.66666666666663" width="366" height="55"/>
+                                                <color key="backgroundColor" name="CustomRed"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="sgG-uc-I3p"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Bold" family="Montserrat arm" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Ամրագրել">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="reservePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fsM-eO-n42"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ընտրեք սրահը" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buB-c2-ngv">
+                                                <rect key="frame" x="140" y="338.33333333333331" width="134.33333333333337" height="19.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ընդհանուր" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zxN-Du-jkK">
+                                                <rect key="frame" x="24" y="374" width="366" height="48"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="aE5-EG-t4D"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Օր" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p91-Lj-mGO">
+                                                <rect key="frame" x="24" y="481.66666666666663" width="366" height="48"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="gSW-Px-6NW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ժամ" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQD-Cg-2Rz">
+                                                <rect key="frame" x="24" y="537.66666666666663" width="366" height="48"/>
+                                                <color key="backgroundColor" name="CustomGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="ED8-sd-jKI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="red-lu-KvD" firstAttribute="centerX" secondItem="aNN-ql-gtW" secondAttribute="centerX" constant="-30" id="2pg-vg-BL9"/>
+                                            <constraint firstItem="RQD-Cg-2Rz" firstAttribute="trailing" secondItem="p91-Lj-mGO" secondAttribute="trailing" id="4Hv-vz-4F0"/>
+                                            <constraint firstItem="tfJ-SS-7wL" firstAttribute="top" secondItem="zxN-Du-jkK" secondAttribute="bottom" constant="24" id="EoU-3h-WdA"/>
+                                            <constraint firstItem="RQD-Cg-2Rz" firstAttribute="leading" secondItem="p91-Lj-mGO" secondAttribute="leading" id="F58-eM-L74"/>
+                                            <constraint firstAttribute="trailing" secondItem="p91-Lj-mGO" secondAttribute="trailing" constant="24" id="Fwz-em-LN1"/>
+                                            <constraint firstItem="wbh-pL-zzW" firstAttribute="leading" secondItem="3IX-PC-NgO" secondAttribute="leading" constant="24" id="G0I-Ye-I3k"/>
+                                            <constraint firstItem="ILW-6T-5Et" firstAttribute="top" secondItem="hMY-ci-jvZ" secondAttribute="bottom" constant="16" id="Gca-Ft-q0z"/>
+                                            <constraint firstItem="KQp-nY-vMo" firstAttribute="leading" secondItem="ILW-6T-5Et" secondAttribute="leading" id="Hh8-ej-2rR"/>
+                                            <constraint firstAttribute="trailing" secondItem="wbh-pL-zzW" secondAttribute="trailing" constant="24" id="JJf-f4-dtt"/>
+                                            <constraint firstItem="aNN-ql-gtW" firstAttribute="centerX" secondItem="u0D-Ty-2Fs" secondAttribute="centerX" id="MnS-oc-ku7"/>
+                                            <constraint firstAttribute="trailing" secondItem="ILW-6T-5Et" secondAttribute="trailing" constant="24" id="Mso-ys-12K"/>
+                                            <constraint firstItem="ILW-6T-5Et" firstAttribute="leading" secondItem="3IX-PC-NgO" secondAttribute="leading" constant="24" id="Ok9-xM-doW"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="u0D-Ty-2Fs" secondAttribute="trailing" constant="121" id="QIN-hz-7Ne"/>
+                                            <constraint firstItem="p91-Lj-mGO" firstAttribute="leading" secondItem="3IX-PC-NgO" secondAttribute="leading" constant="24" id="RSS-SW-F8b"/>
+                                            <constraint firstItem="hMY-ci-jvZ" firstAttribute="top" secondItem="red-lu-KvD" secondAttribute="bottom" constant="27" id="SoM-gs-jpR"/>
+                                            <constraint firstItem="u0D-Ty-2Fs" firstAttribute="leading" secondItem="3IX-PC-NgO" secondAttribute="leadingMargin" constant="121" id="YaM-jg-pTj"/>
+                                            <constraint firstItem="KQp-nY-vMo" firstAttribute="trailing" secondItem="ILW-6T-5Et" secondAttribute="trailing" id="ZUJ-CO-NLK"/>
+                                            <constraint firstItem="wbh-pL-zzW" firstAttribute="top" secondItem="RQD-Cg-2Rz" secondAttribute="bottom" constant="30" id="ZeG-19-Pha"/>
+                                            <constraint firstItem="RQD-Cg-2Rz" firstAttribute="top" secondItem="p91-Lj-mGO" secondAttribute="bottom" constant="8" id="b5t-sl-E2E"/>
+                                            <constraint firstAttribute="bottom" secondItem="wbh-pL-zzW" secondAttribute="bottom" constant="116.33" id="eSD-Oe-Gmb"/>
+                                            <constraint firstItem="zxN-Du-jkK" firstAttribute="top" secondItem="buB-c2-ngv" secondAttribute="bottom" constant="16" id="fuN-ci-Jmn"/>
+                                            <constraint firstItem="hMY-ci-jvZ" firstAttribute="centerX" secondItem="aNN-ql-gtW" secondAttribute="centerX" id="hME-8v-KQC"/>
+                                            <constraint firstItem="buB-c2-ngv" firstAttribute="top" secondItem="KQp-nY-vMo" secondAttribute="bottom" constant="24" id="hoA-dm-vaK"/>
+                                            <constraint firstItem="u0D-Ty-2Fs" firstAttribute="top" secondItem="3IX-PC-NgO" secondAttribute="top" constant="24" id="iOQ-lP-HiW"/>
+                                            <constraint firstItem="KQp-nY-vMo" firstAttribute="top" secondItem="ILW-6T-5Et" secondAttribute="bottom" constant="11" id="iOX-cX-lLq"/>
+                                            <constraint firstItem="aNN-ql-gtW" firstAttribute="top" secondItem="u0D-Ty-2Fs" secondAttribute="bottom" constant="24" id="mc9-8Y-eCq"/>
+                                            <constraint firstItem="zxN-Du-jkK" firstAttribute="leading" secondItem="ILW-6T-5Et" secondAttribute="leading" id="nFu-ld-Mjh"/>
+                                            <constraint firstItem="zxN-Du-jkK" firstAttribute="trailing" secondItem="ILW-6T-5Et" secondAttribute="trailing" id="sjm-Zs-7Vj"/>
+                                            <constraint firstItem="tfJ-SS-7wL" firstAttribute="centerX" secondItem="KQp-nY-vMo" secondAttribute="centerX" id="tll-L9-Tdt"/>
+                                            <constraint firstItem="buB-c2-ngv" firstAttribute="centerX" secondItem="KQp-nY-vMo" secondAttribute="centerX" id="vlS-eS-xNK"/>
+                                            <constraint firstItem="p91-Lj-mGO" firstAttribute="top" secondItem="tfJ-SS-7wL" secondAttribute="bottom" constant="16" id="yLP-PX-4g8"/>
+                                            <constraint firstItem="red-lu-KvD" firstAttribute="top" secondItem="aNN-ql-gtW" secondAttribute="bottom" constant="36" id="zxb-Xb-6pW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3IX-PC-NgO" firstAttribute="width" secondItem="nvs-5E-yag" secondAttribute="width" id="57O-xi-FLw"/>
+                                    <constraint firstAttribute="bottom" secondItem="3IX-PC-NgO" secondAttribute="bottom" id="Owr-Jm-Azy"/>
+                                    <constraint firstAttribute="trailing" secondItem="3IX-PC-NgO" secondAttribute="trailing" id="eGO-5e-k2g"/>
+                                    <constraint firstItem="3IX-PC-NgO" firstAttribute="leading" secondItem="nvs-5E-yag" secondAttribute="leading" id="ech-ab-vvV"/>
+                                    <constraint firstItem="3IX-PC-NgO" firstAttribute="top" secondItem="nvs-5E-yag" secondAttribute="top" id="qoy-3Q-fzu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nvs-5E-yag" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1vY-xl-0GK"/>
+                            <constraint firstAttribute="trailing" secondItem="nvs-5E-yag" secondAttribute="trailing" id="OkT-QD-ZLD"/>
+                            <constraint firstItem="nvs-5E-yag" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="dyI-CH-8ja"/>
+                            <constraint firstAttribute="bottom" secondItem="nvs-5E-yag" secondAttribute="bottom" id="gHA-pK-zfU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="tEJ-kC-ktq" id="ZYm-OB-rkp"/>
+                        <outlet property="dayTF" destination="p91-Lj-mGO" id="XfX-3Z-Siv"/>
+                        <outlet property="hallTF" destination="zxN-Du-jkK" id="rEf-0s-qeB"/>
+                        <outlet property="hourTF" destination="RQD-Cg-2Rz" id="7UV-6z-eja"/>
+                        <outlet property="logoImageView" destination="ZnV-Iu-4iT" id="Afe-07-d9t"/>
+                        <outlet property="networkNameLabel" destination="FGS-dA-hAs" id="46X-Tk-qXr"/>
+                        <outlet property="peopleCountTF" destination="ILW-6T-5Et" id="5BO-sC-hO5"/>
+                        <outlet property="scrollView" destination="nvs-5E-yag" id="Zvo-OL-kfi"/>
+                        <outletCollection property="numberButtons" destination="tXz-sX-dA8" collectionClass="NSMutableArray" id="KMJ-rZ-HB7"/>
+                        <outletCollection property="numberButtons" destination="MzN-Oa-OPd" collectionClass="NSMutableArray" id="6gZ-dJ-8C5"/>
+                        <outletCollection property="numberButtons" destination="GjY-FL-6cj" collectionClass="NSMutableArray" id="kNW-UN-sAH"/>
+                        <outletCollection property="numberButtons" destination="VFU-XY-Sxu" collectionClass="NSMutableArray" id="DJF-fV-nTL"/>
+                        <outletCollection property="numberButtons" destination="RTM-1I-foH" collectionClass="NSMutableArray" id="T29-Qb-Si1"/>
+                        <outletCollection property="numberButtons" destination="8I4-Tu-bWh" collectionClass="NSMutableArray" id="icQ-bP-U5t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Line" width="158" height="3"/>
+        <image name="cafeLogo" width="32" height="32"/>
+        <namedColor name="CustomDarkGray">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGray">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomRed">
+            <color red="1" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

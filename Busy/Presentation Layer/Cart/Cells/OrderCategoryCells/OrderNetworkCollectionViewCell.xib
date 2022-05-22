@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderNetworkCollectionViewCell" id="gTV-IL-0wX" customClass="OrderNetworkCollectionViewCell" customModule="Busy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-BP-xJw" userLabel="ContainerView">
+                        <rect key="frame" x="10" y="10" width="36" height="36"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrderCafe" translatesAutoresizingMaskIntoConstraints="NO" id="Fzx-zn-qqO">
+                                <rect key="frame" x="6" y="6" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="7Wp-aN-PVL"/>
+                                    <constraint firstAttribute="width" constant="24" id="kkG-AE-uWC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="3un-gg-BsR"/>
+                            <constraint firstItem="Fzx-zn-qqO" firstAttribute="centerY" secondItem="oeo-BP-xJw" secondAttribute="centerY" id="YVH-uR-blI"/>
+                            <constraint firstItem="Fzx-zn-qqO" firstAttribute="centerX" secondItem="oeo-BP-xJw" secondAttribute="centerX" id="gS3-kW-mdQ"/>
+                            <constraint firstAttribute="width" constant="36" id="hJ3-n6-fxA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cLO-Hc-xfO">
+                        <rect key="frame" x="54" y="10" width="98.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ամիրյան 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WX-JS-Nxa">
+                        <rect key="frame" x="54" y="31" width="74" height="15"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="12"/>
+                        <color key="textColor" name="CustomGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="CustomRed"/>
+            <constraints>
+                <constraint firstItem="6WX-JS-Nxa" firstAttribute="leading" secondItem="cLO-Hc-xfO" secondAttribute="leading" id="2wm-uU-150"/>
+                <constraint firstItem="6WX-JS-Nxa" firstAttribute="bottom" secondItem="oeo-BP-xJw" secondAttribute="bottom" id="9OR-dJ-U2l"/>
+                <constraint firstItem="oeo-BP-xJw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="I2x-Cr-lN4"/>
+                <constraint firstItem="oeo-BP-xJw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="PgY-aY-j2n"/>
+                <constraint firstItem="cLO-Hc-xfO" firstAttribute="top" secondItem="oeo-BP-xJw" secondAttribute="top" id="b5V-lt-UtO"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cLO-Hc-xfO" secondAttribute="trailing" constant="10" id="bUC-UF-8tY"/>
+                <constraint firstItem="cLO-Hc-xfO" firstAttribute="leading" secondItem="oeo-BP-xJw" secondAttribute="trailing" constant="8" id="fOo-D6-IIA"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="addressLabel" destination="6WX-JS-Nxa" id="sxk-9X-thU"/>
+                <outlet property="cafeNameLabel" destination="cLO-Hc-xfO" id="gdx-Lc-1iP"/>
+                <outlet property="logoImageView" destination="Fzx-zn-qqO" id="BUZ-aA-mXe"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="65.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="OrderCafe" width="24" height="24"/>
+        <namedColor name="CustomGray">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomRed">
+            <color red="1" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

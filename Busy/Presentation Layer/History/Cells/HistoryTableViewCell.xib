@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryTableViewCell" id="MLD-4u-DoM" customClass="HistoryTableViewCell" customModule="Busy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MLD-4u-DoM" id="QhQ-DU-e5w">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavRestuarant" translatesAutoresizingMaskIntoConstraints="NO" id="KZ3-ei-1sS">
+                        <rect key="frame" x="24" y="7.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Vwh-QL-08g"/>
+                            <constraint firstAttribute="height" constant="40" id="dOg-8D-Bdz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tashir Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKw-Jh-3ES">
+                        <rect key="frame" x="76" y="7.5" width="95.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Թումանյան 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cag-pY-hrZ">
+                        <rect key="frame" x="76" y="29.5" width="89.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                        <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forwardVector" translatesAutoresizingMaskIntoConstraints="NO" id="Pt7-c0-fhZ">
+                        <rect key="frame" x="288" y="21.5" width="7" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="igc-Dl-86y"/>
+                            <constraint firstAttribute="height" constant="12" id="snV-hg-bRr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500 AMD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="mxE-Df-m6Z">
+                        <rect key="frame" x="205" y="19.5" width="68" height="16"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="KZ3-ei-1sS" firstAttribute="leading" secondItem="QhQ-DU-e5w" secondAttribute="leading" constant="24" id="9OR-fK-ljy"/>
+                    <constraint firstAttribute="trailing" secondItem="Pt7-c0-fhZ" secondAttribute="trailing" constant="25" id="FXA-vn-nhD"/>
+                    <constraint firstItem="Pt7-c0-fhZ" firstAttribute="leading" secondItem="mxE-Df-m6Z" secondAttribute="trailing" constant="15" id="FYg-k7-bjH"/>
+                    <constraint firstItem="Pt7-c0-fhZ" firstAttribute="centerY" secondItem="KZ3-ei-1sS" secondAttribute="centerY" id="THJ-GY-iN8"/>
+                    <constraint firstItem="xKw-Jh-3ES" firstAttribute="top" secondItem="KZ3-ei-1sS" secondAttribute="top" id="V8x-0U-5Fe"/>
+                    <constraint firstItem="Cag-pY-hrZ" firstAttribute="top" secondItem="xKw-Jh-3ES" secondAttribute="bottom" constant="2" id="Zw8-Wg-iP7"/>
+                    <constraint firstItem="mxE-Df-m6Z" firstAttribute="centerY" secondItem="Pt7-c0-fhZ" secondAttribute="centerY" id="nAY-Te-yR2"/>
+                    <constraint firstItem="KZ3-ei-1sS" firstAttribute="centerY" secondItem="QhQ-DU-e5w" secondAttribute="centerY" id="nfG-6b-vh0"/>
+                    <constraint firstItem="mxE-Df-m6Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xKw-Jh-3ES" secondAttribute="trailing" constant="10" id="wbm-Rv-MAQ"/>
+                    <constraint firstItem="Cag-pY-hrZ" firstAttribute="leading" secondItem="xKw-Jh-3ES" secondAttribute="leading" id="xl3-x8-ujB"/>
+                    <constraint firstItem="xKw-Jh-3ES" firstAttribute="leading" secondItem="KZ3-ei-1sS" secondAttribute="trailing" constant="12" id="ynU-bJ-W5F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="PL4-Ra-nFI"/>
+            <connections>
+                <outlet property="branchLabel" destination="Cag-pY-hrZ" id="pJ9-yO-IGR"/>
+                <outlet property="logoImageView" destination="KZ3-ei-1sS" id="O6B-23-G1o"/>
+                <outlet property="networkName" destination="xKw-Jh-3ES" id="p1e-bC-gdS"/>
+                <outlet property="priceLabel" destination="mxE-Df-m6Z" id="hMx-8G-gMs"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FavRestuarant" width="28" height="28"/>
+        <image name="forwardVector" width="7" height="12"/>
+    </resources>
+</document>

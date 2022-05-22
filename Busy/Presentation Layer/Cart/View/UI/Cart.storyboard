@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cart View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CartViewController" id="Y6W-OH-hqX" customClass="CartViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMV-EM-bdy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-yk-ZeB">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="isz-A8-vCM"/>
+                                            <constraint firstAttribute="height" constant="44" id="p9R-fd-d6q"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q8y-ue-dxw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Զամբյուղ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrN-EK-VtV">
+                                        <rect key="frame" x="169.5" y="16" width="75" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="i8M-yk-ZeB" firstAttribute="centerY" secondItem="eMV-EM-bdy" secondAttribute="centerY" id="K4r-Xa-rWT"/>
+                                    <constraint firstItem="i8M-yk-ZeB" firstAttribute="leading" secondItem="eMV-EM-bdy" secondAttribute="leading" constant="5" id="Os5-fG-ohu"/>
+                                    <constraint firstItem="ZrN-EK-VtV" firstAttribute="centerX" secondItem="eMV-EM-bdy" secondAttribute="centerX" id="P6K-An-pzP"/>
+                                    <constraint firstAttribute="height" constant="50" id="Scc-07-sL8"/>
+                                    <constraint firstItem="ZrN-EK-VtV" firstAttribute="centerY" secondItem="eMV-EM-bdy" secondAttribute="centerY" id="o1X-hK-W5d"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tKW-y9-Ldn">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wnQ-Rk-P2X">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tKW-y9-Ldn" firstAttribute="top" secondItem="eMV-EM-bdy" secondAttribute="bottom" id="C7e-ln-pjg"/>
+                            <constraint firstItem="tKW-y9-Ldn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GX9-yJ-pII"/>
+                            <constraint firstItem="eMV-EM-bdy" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Gx2-QH-ogF"/>
+                            <constraint firstItem="eMV-EM-bdy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jjL-y0-Q2X"/>
+                            <constraint firstItem="eMV-EM-bdy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mNv-3X-FFQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tKW-y9-Ldn" secondAttribute="trailing" id="n4c-rl-Bjb"/>
+                            <constraint firstAttribute="bottom" secondItem="tKW-y9-Ldn" secondAttribute="bottom" id="qTT-TY-8ID"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="tKW-y9-Ldn" id="ODr-KN-VMi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left 1" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

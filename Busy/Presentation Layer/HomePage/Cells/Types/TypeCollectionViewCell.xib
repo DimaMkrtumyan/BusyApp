@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="TypeCollectionViewCell" id="gTV-IL-0wX" customClass="TypeCollectionViewCell" customModule="Busy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="183" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvG-VW-xtf">
+                        <rect key="frame" x="5" y="5" width="173" height="41"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork.knife.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="imO-vS-Gez">
+                                <rect key="frame" x="20" y="13" width="16" height="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Pni-Dl-80A"/>
+                                    <constraint firstAttribute="height" constant="16" id="eZa-y9-byA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Արագ սնունդ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SZl-fO-fKH">
+                                <rect key="frame" x="43" y="12" width="101" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CustomGray"/>
+                        <constraints>
+                            <constraint firstItem="SZl-fO-fKH" firstAttribute="leading" secondItem="imO-vS-Gez" secondAttribute="trailing" constant="7" id="6nK-gI-MmL"/>
+                            <constraint firstItem="imO-vS-Gez" firstAttribute="leading" secondItem="RvG-VW-xtf" secondAttribute="leading" constant="20" id="7FI-Ka-Wxc"/>
+                            <constraint firstItem="imO-vS-Gez" firstAttribute="centerY" secondItem="RvG-VW-xtf" secondAttribute="centerY" id="810-g7-pJr"/>
+                            <constraint firstItem="SZl-fO-fKH" firstAttribute="centerY" secondItem="imO-vS-Gez" secondAttribute="centerY" id="eJc-Zu-kPi"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SZl-fO-fKH" secondAttribute="trailing" constant="10" id="utE-vY-UbU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RvG-VW-xtf" secondAttribute="bottom" constant="5" id="7HE-cp-iHc"/>
+                <constraint firstAttribute="trailing" secondItem="RvG-VW-xtf" secondAttribute="trailing" constant="5" id="DSB-b4-ycj"/>
+                <constraint firstItem="RvG-VW-xtf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="FB7-Da-LV2"/>
+                <constraint firstItem="RvG-VW-xtf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="XIM-za-hFw"/>
+            </constraints>
+            <connections>
+                <outlet property="categoryImageView" destination="imO-vS-Gez" id="BIT-5u-BgH"/>
+                <outlet property="categoryNameLabel" destination="SZl-fO-fKH" id="fHv-Va-fd4"/>
+                <outlet property="containerView" destination="RvG-VW-xtf" id="UgQ-Ng-lqf"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="71.651785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fork.knife.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="CustomGray">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

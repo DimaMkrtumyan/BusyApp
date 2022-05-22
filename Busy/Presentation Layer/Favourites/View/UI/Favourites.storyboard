@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Հավանված-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FavouritesViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ul-36-iBL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Հավանված" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSZ-h9-ghb">
+                                        <rect key="frame" x="160" y="16" width="94.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VYI-UQ-oMY"/>
+                                    <constraint firstItem="fSZ-h9-ghb" firstAttribute="centerX" secondItem="6ul-36-iBL" secondAttribute="centerX" id="dZB-Rw-ZRb"/>
+                                    <constraint firstItem="fSZ-h9-ghb" firstAttribute="centerY" secondItem="6ul-36-iBL" secondAttribute="centerY" id="f4j-kz-nQv"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MR1-Ra-vv8">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6ul-36-iBL" secondAttribute="trailing" id="0MI-Xy-UKu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MR1-Ra-vv8" secondAttribute="trailing" id="87H-GH-BoH"/>
+                            <constraint firstItem="6ul-36-iBL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8fs-CL-dtr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MR1-Ra-vv8" secondAttribute="bottom" id="CQy-O9-xMz"/>
+                            <constraint firstItem="6ul-36-iBL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XWZ-rV-tEi"/>
+                            <constraint firstItem="MR1-Ra-vv8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ZaV-pY-CT0"/>
+                            <constraint firstItem="MR1-Ra-vv8" firstAttribute="top" secondItem="6ul-36-iBL" secondAttribute="bottom" id="t1x-vL-2Oz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Հավանված" image="heart2" id="v5X-Cy-RF4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="favTableView" destination="MR1-Ra-vv8" id="D1v-kw-eq4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.04347826086962" y="57.589285714285708"/>
+        </scene>
+        <!--Fav Restuarant View Controller-->
+        <scene sceneID="ZnT-AN-gGT">
+            <objects>
+                <viewController storyboardIdentifier="FavRestuarantViewController" id="isH-QZ-i8u" customClass="FavRestuarantViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PEl-Zv-8Ha">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kO-3k-5tI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjR-Md-IJN">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="lxC-Zy-9pf"/>
+                                            <constraint firstAttribute="width" constant="44" id="xRq-Sv-0HY"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="isH-QZ-i8u" eventType="touchUpInside" id="aQr-Hu-0ND"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Հավանված" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-Mh-byQ">
+                                        <rect key="frame" x="160" y="16" width="94.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ase-Mh-byQ" firstAttribute="centerX" secondItem="5kO-3k-5tI" secondAttribute="centerX" id="1jT-aA-FWy"/>
+                                    <constraint firstItem="Ase-Mh-byQ" firstAttribute="centerY" secondItem="5kO-3k-5tI" secondAttribute="centerY" id="4S6-ut-Lan"/>
+                                    <constraint firstItem="CjR-Md-IJN" firstAttribute="leading" secondItem="5kO-3k-5tI" secondAttribute="leading" constant="5" id="ID7-K2-1CR"/>
+                                    <constraint firstAttribute="height" constant="50" id="Z3X-qB-9XF"/>
+                                    <constraint firstItem="CjR-Md-IJN" firstAttribute="centerY" secondItem="5kO-3k-5tI" secondAttribute="centerY" id="iWZ-Xh-e6v"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hjn-Us-K3h">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="wI2-Z6-jxZ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DUX-fi-ObV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5kO-3k-5tI" firstAttribute="trailing" secondItem="DUX-fi-ObV" secondAttribute="trailing" id="1Gz-EW-afg"/>
+                            <constraint firstItem="5kO-3k-5tI" firstAttribute="leading" secondItem="DUX-fi-ObV" secondAttribute="leading" id="DeS-1p-kvI"/>
+                            <constraint firstItem="DUX-fi-ObV" firstAttribute="trailing" secondItem="Hjn-Us-K3h" secondAttribute="trailing" id="KIi-jV-oTW"/>
+                            <constraint firstAttribute="bottom" secondItem="Hjn-Us-K3h" secondAttribute="bottom" id="Pkt-LN-52g"/>
+                            <constraint firstItem="Hjn-Us-K3h" firstAttribute="leading" secondItem="DUX-fi-ObV" secondAttribute="leading" id="SET-Fm-z8g"/>
+                            <constraint firstItem="Hjn-Us-K3h" firstAttribute="top" secondItem="5kO-3k-5tI" secondAttribute="bottom" id="VMw-rd-QpM"/>
+                            <constraint firstItem="5kO-3k-5tI" firstAttribute="top" secondItem="DUX-fi-ObV" secondAttribute="top" id="tBw-pv-goY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favCollectionView" destination="Hjn-Us-K3h" id="zkV-dP-R9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgm-s8-meo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679.7101449275362" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart2" width="20" height="20"/>
+        <image name="left 1" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

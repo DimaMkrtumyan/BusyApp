@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Անձնական-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PersonalViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpj-l6-vLP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Անձնական էջ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYL-35-0wt">
+                                        <rect key="frame" x="150.5" y="16" width="113.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wYL-35-0wt" firstAttribute="centerX" secondItem="Mpj-l6-vLP" secondAttribute="centerX" id="B15-3Q-UJN"/>
+                                    <constraint firstAttribute="height" constant="50" id="Eue-Ra-bh6"/>
+                                    <constraint firstItem="wYL-35-0wt" firstAttribute="centerY" secondItem="Mpj-l6-vLP" secondAttribute="centerY" id="wFD-sf-V4z"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IGZ-CK-gSR">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mpj-l6-vLP" secondAttribute="trailing" id="CXf-9a-NSE"/>
+                            <constraint firstItem="IGZ-CK-gSR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EdU-8s-Cdf"/>
+                            <constraint firstItem="IGZ-CK-gSR" firstAttribute="top" secondItem="Mpj-l6-vLP" secondAttribute="bottom" id="HHW-1s-LqT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IGZ-CK-gSR" secondAttribute="trailing" id="MFi-LY-rMd"/>
+                            <constraint firstAttribute="bottom" secondItem="IGZ-CK-gSR" secondAttribute="bottom" id="WFl-Wq-fVf"/>
+                            <constraint firstItem="Mpj-l6-vLP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="iC0-6q-wHv"/>
+                            <constraint firstItem="Mpj-l6-vLP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="maW-OT-5DI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Անձնական" image="user2" id="M9c-dZ-no9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="personalTableView" destination="IGZ-CK-gSR" id="Qpa-tU-5XB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="user2" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

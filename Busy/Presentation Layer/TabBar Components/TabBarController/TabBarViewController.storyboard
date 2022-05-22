@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AqV-8v-eSY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Tab Bar View Controller-->
+        <scene sceneID="QOg-oB-JkI">
+            <objects>
+                <tabBarController storyboardIdentifier="CustomTabBarViewController" id="AqV-8v-eSY" customClass="CustomTabBarViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="DSx-dJ-VD1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="tintColor"/>
+                        <color key="selectedImageTintColor" name="CustomRed"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tabBar.itemSpacing">
+                            <integer key="value" value="500"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="vrv-1r-lOE" kind="relationship" relationship="viewControllers" id="rdL-MX-eQt"/>
+                        <segue destination="AVo-Xw-NqQ" kind="relationship" relationship="viewControllers" id="Qz7-Fu-N1l"/>
+                        <segue destination="UrX-DL-Irf" kind="relationship" relationship="viewControllers" id="wO1-t1-4Rp"/>
+                        <segue destination="Rg6-qO-mhV" kind="relationship" relationship="viewControllers" id="YMS-hc-MTQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZm-Fr-jhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1417" y="-958"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="rNx-mw-3zP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="vrv-1r-lOE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Գլխավոր" image="home2" id="lyf-xn-Q9M"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="326-AA-cuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2203" y="-488"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="Z8J-IU-ya1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favourites" id="UrX-DL-Irf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kKz-AS-6zB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFP-In-NNn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1235" y="-488"/>
+        </scene>
+        <!--Personal-->
+        <scene sceneID="OaL-EV-xol">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Personal" id="Rg6-qO-mhV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Անձնական" image="user2" id="Cu5-pA-Hu0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKp-Mq-wLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-934" y="-510"/>
+        </scene>
+        <!--Քարտեզ-->
+        <scene sceneID="7lh-Fr-YeC">
+            <objects>
+                <viewController id="AVo-Xw-NqQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2s-d0-xaU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zl5-Fe-YEt"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Քարտեզ" image="map2" id="hiI-cc-ZdC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwa-Mw-6dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1771" y="-62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home2" width="20" height="20"/>
+        <image name="map2" width="20" height="20"/>
+        <image name="user2" width="20" height="20"/>
+        <namedColor name="CustomRed">
+            <color red="1" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

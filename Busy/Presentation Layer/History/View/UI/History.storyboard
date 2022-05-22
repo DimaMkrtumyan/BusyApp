@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--History View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="Y6W-OH-hqX" customClass="HistoryViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpS-MP-neI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkp-tG-c9E">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="P6b-Le-eYQ"/>
+                                            <constraint firstAttribute="width" constant="44" id="Z67-v8-TyW"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NSW-Cr-5qb"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Պատվերների պատմություն" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0n-OV-1PW">
+                                        <rect key="frame" x="94.5" y="16" width="225.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vkp-tG-c9E" firstAttribute="centerY" secondItem="zpS-MP-neI" secondAttribute="centerY" id="2w3-es-g2P"/>
+                                    <constraint firstItem="P0n-OV-1PW" firstAttribute="centerX" secondItem="zpS-MP-neI" secondAttribute="centerX" id="Ixo-bZ-I3b"/>
+                                    <constraint firstItem="vkp-tG-c9E" firstAttribute="leading" secondItem="zpS-MP-neI" secondAttribute="leading" constant="5" id="hrF-fn-muH"/>
+                                    <constraint firstItem="P0n-OV-1PW" firstAttribute="centerY" secondItem="zpS-MP-neI" secondAttribute="centerY" id="lbC-z5-xJw"/>
+                                    <constraint firstAttribute="height" constant="50" id="sR1-Vd-UFh"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xXw-VI-dTk">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zpS-MP-neI" secondAttribute="trailing" id="3mG-3R-vqs"/>
+                            <constraint firstItem="xXw-VI-dTk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HUQ-hc-efh"/>
+                            <constraint firstItem="zpS-MP-neI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="W1h-Et-UjG"/>
+                            <constraint firstItem="xXw-VI-dTk" firstAttribute="top" secondItem="zpS-MP-neI" secondAttribute="bottom" id="enh-kp-eER"/>
+                            <constraint firstAttribute="bottom" secondItem="xXw-VI-dTk" secondAttribute="bottom" id="fdT-53-8Tg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xXw-VI-dTk" secondAttribute="trailing" id="he2-yP-ybA"/>
+                            <constraint firstItem="zpS-MP-neI" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="qaz-FO-MYJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="historyTableView" destination="xXw-VI-dTk" id="Dup-pv-b1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left 1" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

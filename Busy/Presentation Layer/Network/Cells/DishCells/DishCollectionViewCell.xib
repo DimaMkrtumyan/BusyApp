@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Medium.otf">
+            <string>Montserratarm-Medium</string>
+        </array>
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="DishCollectionViewCell" id="gTV-IL-0wX" customClass="DishCollectionViewCell" customModule="Busy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unsplash_6G98hiCJETA" translatesAutoresizingMaskIntoConstraints="NO" id="pvL-R6-lkB">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="91"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="91" id="Mvf-DD-rUw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Սուրճ Ամերիկանո" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-Z6-qul">
+                        <rect key="frame" x="8" y="99" width="144" height="16"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="դրամ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndr-f9-BlX">
+                        <rect key="frame" x="43.5" y="153.5" width="24.5" height="10"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="8"/>
+                        <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65f-lj-XWD">
+                        <rect key="frame" x="8" y="148.5" width="33.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Montserratarm-Medium" family="Montserrat arm" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykh-RB-Y2o">
+                        <rect key="frame" x="120" y="141" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="9r6-zN-eRS"/>
+                            <constraint firstAttribute="width" constant="32" id="Dit-Ph-Jo4"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Group 14"/>
+                        <connections>
+                            <action selector="cartButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ruU-I8-i1s"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckh-c2-bLE">
+                        <rect key="frame" x="80" y="141" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="9Kd-Yt-kn1"/>
+                            <constraint firstAttribute="height" constant="32" id="GES-uu-9m4"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Heart"/>
+                        <connections>
+                            <action selector="heartButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="c0G-wH-NsX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg3-br-p5f">
+                        <rect key="frame" x="8" y="134" width="47.5" height="12.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="1500 ">
+                                <attributes>
+                                    <color key="NSColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="9" name="Montserrat-Regular"/>
+                                    <font key="NSOriginalFont" size="9" name="Montserrat-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    <integer key="NSStrikethrough" value="1"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="դրամ">
+                                <attributes>
+                                    <color key="NSColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="9" name="NotoSansArmenian-Regular"/>
+                                    <font key="NSOriginalFont" size="9" name="Montserrat-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    <integer key="NSStrikethrough" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ykh-RB-Y2o" firstAttribute="leading" secondItem="ckh-c2-bLE" secondAttribute="trailing" constant="8" id="IYc-Vq-EB2"/>
+                <constraint firstItem="NeY-Z6-qul" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="LGi-dn-GK1"/>
+                <constraint firstAttribute="trailing" secondItem="ykh-RB-Y2o" secondAttribute="trailing" constant="8" id="MaI-aJ-1Bw"/>
+                <constraint firstItem="sg3-br-p5f" firstAttribute="leading" secondItem="65f-lj-XWD" secondAttribute="leading" id="a9q-d0-8iD"/>
+                <constraint firstItem="65f-lj-XWD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="egk-Ml-qB2"/>
+                <constraint firstItem="ndr-f9-BlX" firstAttribute="centerY" secondItem="65f-lj-XWD" secondAttribute="centerY" multiplier="1.01" id="hOC-50-cvC"/>
+                <constraint firstItem="ckh-c2-bLE" firstAttribute="centerY" secondItem="ykh-RB-Y2o" secondAttribute="centerY" id="jrd-u5-hzh"/>
+                <constraint firstAttribute="trailing" secondItem="pvL-R6-lkB" secondAttribute="trailing" id="krp-NH-ORd"/>
+                <constraint firstAttribute="bottom" secondItem="ykh-RB-Y2o" secondAttribute="bottom" constant="9" id="nn5-z8-rZV"/>
+                <constraint firstItem="NeY-Z6-qul" firstAttribute="top" secondItem="pvL-R6-lkB" secondAttribute="bottom" constant="8" id="oB9-lb-vRC"/>
+                <constraint firstItem="pvL-R6-lkB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q9D-Y9-jxr"/>
+                <constraint firstItem="65f-lj-XWD" firstAttribute="centerY" secondItem="ykh-RB-Y2o" secondAttribute="centerY" id="qrm-EV-j9P"/>
+                <constraint firstItem="65f-lj-XWD" firstAttribute="top" secondItem="sg3-br-p5f" secondAttribute="bottom" constant="2" id="tHw-jO-wJq"/>
+                <constraint firstItem="ndr-f9-BlX" firstAttribute="leading" secondItem="65f-lj-XWD" secondAttribute="trailing" constant="2" id="tpX-aI-igV"/>
+                <constraint firstItem="pvL-R6-lkB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uYt-L9-9yF"/>
+                <constraint firstAttribute="trailing" secondItem="NeY-Z6-qul" secondAttribute="trailing" constant="8" id="yAd-pU-BEg"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cartButton" destination="ykh-RB-Y2o" id="J20-2s-FGL"/>
+                <outlet property="discountedLbl" destination="sg3-br-p5f" id="Rlj-KQ-Tqt"/>
+                <outlet property="dishImageView" destination="pvL-R6-lkB" id="qVS-Mb-FNo"/>
+                <outlet property="dishNameLabel" destination="NeY-Z6-qul" id="x6A-uj-G5f"/>
+                <outlet property="heartButton" destination="ckh-c2-bLE" id="MFY-CT-Y1k"/>
+                <outlet property="priceLabel" destination="65f-lj-XWD" id="IdE-dF-5D4"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 14" width="32" height="32"/>
+        <image name="Heart" width="18" height="16"/>
+        <image name="unsplash_6G98hiCJETA" width="158" height="91"/>
+    </resources>
+</document>

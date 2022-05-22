@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserratarm-Regular.otf">
+            <string>Montserratarm-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Active Orders View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ActiveOrdersViewController" id="Y6W-OH-hqX" customClass="ActiveOrdersViewController" customModule="Busy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYo-wA-mCK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FC-vl-QFp">
+                                        <rect key="frame" x="5" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="5n9-hB-eI1"/>
+                                            <constraint firstAttribute="width" constant="44" id="td1-RZ-29M"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left 1"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a4c-MD-G0p"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ակտիվ պատվերներ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBF-pF-lKE">
+                                        <rect key="frame" x="125" y="16" width="164.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Montserratarm-Regular" family="Montserrat arm" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1E5-CR-Git"/>
+                                    <constraint firstItem="6FC-vl-QFp" firstAttribute="centerY" secondItem="PYo-wA-mCK" secondAttribute="centerY" id="9pV-yd-D7c"/>
+                                    <constraint firstItem="gBF-pF-lKE" firstAttribute="centerX" secondItem="PYo-wA-mCK" secondAttribute="centerX" id="Pg0-7W-PWA"/>
+                                    <constraint firstItem="6FC-vl-QFp" firstAttribute="leading" secondItem="PYo-wA-mCK" secondAttribute="leading" constant="5" id="U1s-p5-Sj2"/>
+                                    <constraint firstItem="gBF-pF-lKE" firstAttribute="centerY" secondItem="PYo-wA-mCK" secondAttribute="centerY" id="xby-LY-uud"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dW5-Ve-36C">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PYo-wA-mCK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4Ma-NM-ic9"/>
+                            <constraint firstItem="PYo-wA-mCK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="OfB-cs-eEA"/>
+                            <constraint firstAttribute="bottom" secondItem="dW5-Ve-36C" secondAttribute="bottom" id="WY4-gx-dux"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dW5-Ve-36C" secondAttribute="trailing" id="XFz-pa-LTQ"/>
+                            <constraint firstItem="dW5-Ve-36C" firstAttribute="top" secondItem="PYo-wA-mCK" secondAttribute="bottom" id="bLf-Yx-b2T"/>
+                            <constraint firstAttribute="trailing" secondItem="PYo-wA-mCK" secondAttribute="trailing" id="kHV-Uq-k05"/>
+                            <constraint firstItem="dW5-Ve-36C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nvV-Sp-uTO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activeOrdersTableView" destination="dW5-Ve-36C" id="Vic-12-eiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left 1" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
